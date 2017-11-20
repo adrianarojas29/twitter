@@ -14,10 +14,11 @@ setInterval(
         }
         if(text.length > 130)
         {
-            document.getElementById('counter').style.color = "red";
+            document.getElementById('counter').style.color = "yellow";
         }
-        if(text.length > 140)
+        if(text.length >= 140)
         {
+            document.getElementById('counter').style.color = "red";
             newtext = text.slice(0,140);
             message.value = newtext;
         }
